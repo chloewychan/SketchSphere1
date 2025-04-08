@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-1.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>SketchSphere</title>
+</head>
+
+<body>
+    <img src="./images/icon-2.png" width="200px">
+    <div class="progress-bar-container">
+        <div id="progress-bar-contents" class="progress-bar-contents" style="height:24px;width:0%"></div>
+    </div>
+    
+    <br/>
+
+    <div class="container">
+
+        <section class="tools-board">
+
+            <div class="row">
+                <label for="" class="title">Tools</label>
+                <div class="options">
+                    <div class="option tool" id="pencil"><img src="images/icon-pencil.png" width="50px"></div>
+                    <div class="option active tool" id="brush"><img src="images/icon-brush.png" width="50px"></div>
+                    <div class="option tool" id="eraser"><img src="images/icon-eraser.png" width="50px"></div>
+                </div>
+                <div class="options">
+                    <input type="range" id="size-slider" min="1" max="30" value="5">
+                </div>
+            </div>
+
+            <div class="row colors">
+                <label for="" class="title">Colors</label>
+                <div class="options">
+                    <div class="option selected"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option">
+                        <input type="color" value="#FF0000" name="" id="color-picker">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="" class="title"> <strong>Shapes</strong></label>
+                <div class="options">
+                    <div class="option tool" id="rectangle"><img src="images/icon-rectangle.png" width="20px"></div>
+                    <div class="option tool" id="circle"><img src="images/icon-circle.png" width="20px"></div>
+                    <div class="option tool" id="triangle"><img src="images/icon-triangle.png" width="20px"></div>
+                    <div class="option tool" id="square"><img src="images/icon-square.png" width="20px"></div>
+                    <div class="option tool" id="hexagon"><img src="images/icon-hexagon.png" width="20px"></div>
+                    <div class="option tool" id="pentagon"><img src="images/icon-pentagon.png" width="20px"></div>
+                    <div class="option tool" id="line"><img src="images/icon-line.png" width="20px"></div>
+                    <div class="option tool" id="arrow"><img src="images/icon-arrow.png" width="20px"></div>
+                </div>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="fill-shape">
+                        <label for="fill-shape"> Fill Shape</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row buttons">
+                <button class="button clear-canvas">Clear Canvas</button>
+                <button class="button download-image">Download Image</button>
+            </div>
+        </section>
+
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+
+        <div class="buttons">
+
+            <p class="p" for="number-of-players" id="info">Player 1's turn!<p>
+
+            <p id="correct">Correct:</p>
+            <p id="skipped">Skipped:</p>
+
+            <button class="button correct">Correct!</button>
+            <button class="button skip">Skip!</button>
+
+            <br/>
+
+            <button class="button done">Finish Game</button>
+        </div>
+
+    </div>
+
+    <script src="./dist/sketch.js"></script>
+</body>
+
+</html>
+

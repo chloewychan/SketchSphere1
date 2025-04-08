@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>SketchSphere</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/icon-1.png" width="500px" height="500px">
+        <div class="buttons">
+            <label for="number-of-players" class="label">Enter number of players (1-10):</label>
+            <input class="input" type="number" id="number-of-players" min="1" max="10" placeholder="e.g., 8">
+             <br/>
+
+            <label class="label">Enter your team name:</label>
+            <input class="input" type="text" id="team-name" placeholder="e.g., MelissasCool">
+            <button class="button" id="start-game">Start Game</button>
+            <button class="button" id="view-prompts">View Prompts</button>
+        </div>
+    </div>
+
+
+    <script src="dist/index.js"></script>
+</body>
+</html>
